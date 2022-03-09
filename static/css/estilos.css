@@ -1,0 +1,14 @@
+.img-actions {
+    cursor: pointer;
+}
+th, td {
+    text-align: center;
+}
+td div img {
+    display: block;
+}
+td div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
