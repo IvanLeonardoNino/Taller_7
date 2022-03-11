@@ -2,9 +2,3 @@ th,
 td {
     text-align: center;
 }
-
-td div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
