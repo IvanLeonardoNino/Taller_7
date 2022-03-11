@@ -61,27 +61,22 @@ const getFormFetch = async(url) => {
 }
 
 // CREAR DOCUMENTO
-// Funcion para crear documento
 const btnCreate = async(url, modalTitle, nameBtnSubmit) => {
     customizeForm(await getFormFetch(`${url}/`), `${url}/`, modalTitle, nameBtnSubmit);
 };
 
 // ACTUALIZAR DOCUMENTO
-// Funcion para actualizar documento
 const btnUpdate = async(id, url, modalTitle, nameBtnSubmit) => {
     customizeForm(await getFormFetch(`${url}/${id}/`), `${url}/${id}/`, modalTitle, nameBtnSubmit);
 };
 
 // BORRAR DOCUMENTO
-// Funcion para borrar documento
 const btnDelete = (id, url) => {
     Swal.fire({
         title: "¿Estás seguro?",
         text: "Esta acción no se puede revertir",
         icon: "warning",
         showCancelButton: true,
-        confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
         confirmButtonText: "Borrar",
         cancelButtonText: "Cancelar",
     }).then((result) => {

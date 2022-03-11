@@ -1,14 +1,8 @@
-{% extends './base.html' %}
-{% load static %}
-{% block styles %}
-<link rel="stylesheet" href="{% static 'css/estilos.css' %}">
-{% endblock %}
-{% block content %}
-{% load static %}
+{% extends './base.html' %} {% load static %} {% block styles %}
+<link rel="stylesheet" href="{% static 'css/estilos.css' %}"> {% endblock %} {% block content %} {% load static %}
 <div class="container">
     <div class="mb-3">
-        {% block titulo_pagina %}{% endblock %}
-        {% block boton_nuevo %}{% endblock %}
+        {% block titulo_pagina %}{% endblock %} {% block boton_nuevo %}{% endblock %}
     </div>
     <div class="row">
         <div class="container col-12 mt-5">
@@ -36,8 +30,7 @@
         </div>
     </div>
 </div>
-{% endblock %}
-{% block scripts %}
+{% endblock %} {% block scripts %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 <script src="{% static 'js/script.js' %}"></script>
 {% endblock %}
